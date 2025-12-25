@@ -1,0 +1,112 @@
+/* ===============================
+   MAIN APP BACKGROUND
+   =============================== */
+.stApp {
+  background: radial-gradient(
+    circle at center,
+    #f9fbe7,
+    #f0f4c3,
+    #e6ee9c,
+    #dce775
+  );
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #33691e;
+}
+
+/* ===============================
+   FLOATING DOODLES
+   =============================== */
+.doodle {
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.d1 { top: 10%; left: 5%; }
+.d2 { bottom: 15%; right: 8%; }
+
+/* ===============================
+   CARD STYLE (MATCHING OLIVE)
+   =============================== */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(156, 204, 101, 0.45);
+}
+
+/* ===============================
+   HEADINGS
+   =============================== */
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #33691e;
+  font-weight: 600;
+}
+
+/* ===============================
+   FILE UPLOADER STYLING
+   =============================== */
+div[data-testid="stFileUploader"] {
+  background-color: #f1f8e9;
+  border: 2px dashed #9ccc65;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+div[data-testid="stFileUploader"] label {
+  font-weight: 600;
+  color: #33691e;
+}
+
+/* ===============================
+   SIDEBAR CONTAINER (OLIVE)
+   =============================== */
+[data-testid="stSidebar"] {
+  background: linear-gradient(
+    to bottom,
+    #f1f8e9,
+    #e6ee9c
+  );
+  padding: 18px;
+}
+
+/* Sidebar headers */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+  color: #33691e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar inputs */
+[data-testid="stSidebar"] .stSelectbox,
+[data-testid="stSidebar"] .stRadio,
+[data-testid="stSidebar"] .stCheckbox {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+/* Sidebar buttons */
+[data-testid="stSidebar"] button {
+  background: linear-gradient(135deg, #aed581, #9ccc65);
+  color: #1b5e20;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Divider */
+[data-testid="stSidebar"] hr {
+  border: none;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
